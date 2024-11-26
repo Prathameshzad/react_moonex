@@ -25,12 +25,13 @@ const NAV_LINKS = [
   {
     title: "Contact Us",
     href: "/contact-us",
-  },
+  }, 
 ];
 
 export default function Navbar() {
   const [navOpen, setNavOpen] = useState(false);
   const [currentPath, setCurrentPath] = useState("");
+
 
   useEffect(() => {
     // Set the current path on initial load
@@ -54,14 +55,14 @@ export default function Navbar() {
         className="w-7 h-7 text-white lg:hidden"
         onClick={toggleNav}
       />
-      {/* Mobile Menu */}
+      
       <AnimatePresence>
         {navOpen && (
           <MobileMenu navItems={NAV_LINKS} setNavStatus={setNavOpen} />
         )}
       </AnimatePresence>
 
-      {/* Desktop Menu */}
+      
       <ul className="hidden lg:flex lg:items-center lg:gap-x-16 text-white font-extrabold text-lg">
         {NAV_LINKS.map((link) => {
           const isActive = currentPath === link.href;
