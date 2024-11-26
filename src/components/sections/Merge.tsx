@@ -36,7 +36,7 @@ const Merge = () => {
   ];
 
   return (
-    <div className="text-white p-4 md:p-8 lg:p-44 z-10 relative overflow-hidden">
+    <div className="text-white p-4 md:p-8 lg:p-32 z-10 relative overflow-hidden">
       {/* Features Section */}
       <div className="max-w-6xl mx-auto">
         <div className="flex">
@@ -112,7 +112,7 @@ const Merge = () => {
       </div>
 
       {/* FAQ Section */}
-      <div className="py-10 text-white p-4 relative  font-neue-machina">
+      <div className="pt-24 text-white p-4 relative  font-neue-machina">
         <div className="max-w-3xl mx-auto relative z-10 bg-[#ffffff07] rounded-md p-10">
           <h2 className="text-2xl md:text-3xl text-yellow-500 font-bold mb-8">
             FAQs
