@@ -1,0 +1,167 @@
+:root {
+    /* Default moon position */
+    --moon-x: 0;
+    --moon-y: 0;
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: translate(var(--translate-x), var(--translate-y)) rotate(0deg);
+    }
+    100% {
+      transform: translate(var(--translate-x), var(--translate-y)) rotate(360deg);
+    }
+  }
+  
+  @keyframes moonMovement {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px); /* Move up */
+    }
+    100% {
+      transform: translateY(0); /* Move back down */
+    }
+  }
+  
+  .moon {
+    position: absolute;
+    top: var(--moon-y); /* Use custom variable for Y-position */
+    left: var(--moon-x); /* Use custom variable for X-position */
+    animation: moonMovement 3s infinite;
+  }
+
+  .moon:hover{
+    /* transform: scale(0.5); */
+    box-shadow: 0 0 30px 15px rgba(227, 177, 12, 0.24), inset -25px 0px 0 0px #be940a4b;
+  }
+  
+  .star1 {
+    --translate-x: 5rem;
+    --translate-y: -10px;
+    animation: rotate 5s linear infinite;
+  }
+  
+  .star2 {
+    --translate-x: 0;
+    --translate-y: -4rem;
+    animation: rotate 10s linear infinite;
+  }
+  
+  .star3 {
+    --translate-x: 15rem;
+    --translate-y: 5rem;
+    animation: rotate 10s linear infinite;
+  }
+  
+  /* Small screens (mobile) */
+  @media (max-width: 640px) {
+    :root {
+      --moon-x: 1rem;
+      --moon-y: 1rem;
+    }
+    .star1 {
+      --translate-x: 1rem;
+      --translate-y: -4rem;
+    }
+  
+    .star2 {
+      --translate-x: 0;
+      --translate-y: -2rem;
+    }
+  
+    .star3 {
+      --translate-x: 19rem;
+      --translate-y: 12rem;
+    }
+  }
+  
+  /* Medium screens (tablets) */
+  @media (min-width: 641px) and (max-width: 1024px) {
+    :root {
+      --moon-x: 44rem;
+      --moon-y: 12rem;
+    }
+    .star1 {
+      --translate-x: 30rem;
+      --translate-y: -5rem;
+    }
+  
+    .star2 {
+      --translate-x: 0;
+      --translate-y: -8rem;
+    }
+  
+    .star3 {
+      --translate-x: 30rem;
+      --translate-y: 10rem;
+    }
+  }
+  
+  /* Small Laptops (laptop:S) */
+  @media (min-width: 1024px) and (max-width: 1280px) {
+    :root {
+      --moon-x: 44rem;
+      --moon-y: 12rem;
+    }
+    .star1 {
+      --translate-x: 42rem;
+      --translate-y: -11rem;
+    }
+  
+    .star2 {
+      --translate-x: 0;
+      --translate-y: -9rem;
+    }
+  
+    .star3 {
+      --translate-x: 42rem;
+      --translate-y: 11rem;
+    }
+  }
+  
+  /* Large screens (laptops) */
+  @media (min-width: 1025px) and (max-width: 1440px) {
+    :root {
+      --moon-x: 62rem;
+      --moon-y: 11rem;
+    }
+    .star1 {
+      --translate-x: 60rem;
+      --translate-y: -12rem;
+    }
+  
+    .star2 {
+      --translate-x: 0;
+      --translate-y: -10rem;
+    }
+  
+    .star3 {
+      --translate-x: 60rem;
+      --translate-y: 18rem;
+    }
+  }
+  
+  /* Extra-large screens (desktops) */
+  @media (min-width: 1441px) {
+    :root {
+      --moon-x: 100rem;
+      --moon-y: 20rem;
+    }
+    .star1 {
+      --translate-x: 15rem;
+      --translate-y: -25px;
+    }
+  
+    .star2 {
+      --translate-x: 0;
+      --translate-y: -10rem;
+    }
+  
+    .star3 {
+      --translate-x: 60rem;
+      --translate-y: 15rem;
+    }
+  }
+  
