@@ -8,7 +8,7 @@ const FooterSection = () => {
         <div className="flex items-center space-x-2">
           {/* <Moon className="w-8 h-8 text-yellow-400" />
           <span className="text-xl font-bold text-yellow-400">Moonex</span> */}
-          <img src="/public/footer_logo.png" alt="" className='w-24 h-auto' />
+          <img src="/footer_logo.png" alt="" className='w-24 h-auto' />
         </div>
         <nav className="flex flex-wrap items-center justify-center space-x-4 md:space-x-16">
           <a href="#about" className="hover:text-yellow-500 transition-colors duration-300">About Us</a>

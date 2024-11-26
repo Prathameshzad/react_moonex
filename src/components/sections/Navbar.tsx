@@ -13,8 +13,7 @@ function Navbar() {
       <nav className="container mx-auto px-4 py-6 relative z-50 font-neue-machina">
         <div className="flex justify-between items-center">
           <div className="flex items-center space-x-2">
-            <span><img src="/public/logo.png" alt="" className='w-40'/>
-              </span>
+            <span><img src="/logo.png" alt="logo" className='w-40'/></span>
           </div>
           <div className="hidden lg:flex items-center space-x-12 text-white">
             <a href="#" className="hover:text-yellow-400 transition-colors">Home</a>

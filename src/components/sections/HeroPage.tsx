@@ -36,7 +36,7 @@ const HeroPage = () => {
           className="absolute w-[200px] bg-yellow-500/10 rounded-full hidden lg:flex moon
          transform translate-x-0 translate-y-0 xl:w-[270px] lg:translate-x-[39rem] lg:translate-y-[-7rem]
           xl:translate-x-[56rem] xl:translate-y-[-6rem]">
-          <img src="/public/moon.png" alt="moon" />
+          <img src="/moon.png" alt="moon" />
         </div>
         <div
           className="absolute w-[50px] sm:w-[50px] md:w-[50px] xl:w-[50px] h-auto star1
@@ -45,7 +45,7 @@ const HeroPage = () => {
   md:translate-x-[30rem] md:translate-y-[-5rem] 
   lg:translate-x-[42rem] lg:translate-y-[-11rem] 
   xl:translate-x-[60rem] xl:translate-y-[-12rem]">
-          <img src="/public/star1.png" alt="" />
+          <img src="/star1.png" alt="" />
         </div>
         <div
           className="absolute w-[60px] sm:w-[60px] md:w-[60px] xl:w-[60px] star3
@@ -54,7 +54,7 @@ const HeroPage = () => {
   md:translate-x-[30rem] md:translate-y-[10rem] 
   lg:translate-x-[42rem] lg:translate-y-[11rem] 
   xl:translate-x-[60rem] xl:translate-y-[18rem]">
-          <img src="/public/star3.png" alt="" />
+          <img src="/star3.png" alt="" />
         </div>
         <div
           className="absolute w-[60px] sm:w-[60px] md:w-[60px] xl:w-[60px] lg:block hidden star2
@@ -63,7 +63,7 @@ const HeroPage = () => {
   md:translate-x-[0rem] md:-translate-y-[8rem] 
   lg:translate-x-[0rem] lg:-translate-y-[9rem] 
   xl:translate-x-[0rem] xl:-translate-y-[10rem]">
-          <img src="/public/star2.png" alt="" />
+          <img src="/star2.png" alt="" />
         </div>
         <div className="absolute w-96 h-96 bg-yellow-500/15 rounded-full blur-2xl hidden md:flex transform translate-x-0 translate-y-0 md:translate-x-[-4rem] md:translate-y-[-16rem]"></div>
         <div className="
