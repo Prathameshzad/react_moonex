@@ -4,7 +4,7 @@ import './style.css';
 
 const HeroPage = () => {
   return (
-    <section className="h-[calc(100vh_-_86px)] flex flex-col items-center pt-16 lg:w-4/5 justify-center lg:px-20 px-4  font-neue-machina">
+    <section className="h-[calc(100vh_-_86px)] flex flex-col items-center lg:pt-16 lg:w-4/5 justify-center lg:px-20 px-4  font-neue-machina">
       <div className="flex lg:text-left">
         <div className='space-y-4 my-auto lg:mr-16'>
 
